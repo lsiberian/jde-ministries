@@ -1,0 +1,26 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "\"This is the web api for the devotionals JDE Ministries app\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "node apolloserver.js",
+    "server": "nodemon apolloserver.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "\"JD Evers\"",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.1",
+    "pg": "^7.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.1"
+  }
+}
