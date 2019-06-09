@@ -1,10 +1,8 @@
 import React from 'react'
-const DevotionalItem = ({ title, verse, teaching }) => (
-    <li>
-        <p>Title: {title}</p>
-        <p>Verse: {verse}</p>
-        <p>Teaching: {teaching}</p>
-    </li>
+const DevotionalItem = ({item}) => (
+    <div key={item.id} className="flex-item">
+    {item.verse}<em><br/>{item.title}</em><br/>
+    </div>
 )
 
 

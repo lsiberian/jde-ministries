@@ -1,13 +1,76 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 body {
   margin: 0;
+  background: cadetblue;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+h1 {
+  color: rgb(48, 22, 22);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+}
+
+.parent {
+  display: flex;
+  height: 300px;
+}
+.flex-item {
+  background: rgb(10, 10, 75);
+  padding: 5px;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  border: 1ch;
+  
+  line-height: 150px;
+  color: rgb(245, 230, 230);
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  margin:  auto;
 }
